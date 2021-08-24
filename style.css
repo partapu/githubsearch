@@ -46,6 +46,14 @@ header input {
 header input:focus {
   width: 20%;
 }
+@media only screen and (max-width: 50rem) {
+  header input {
+    width: 60%;
+  }
+  header input:focus {
+    width: 70%;
+  }
+}
 header input:focus::-webkit-input-placeholder {
   transform: translateX(120%);
 }
@@ -70,10 +78,15 @@ header input::placeholder {
   padding: 0.5rem;
   background-color: rgb(85, 64, 105);
 }
+@media only screen and (max-width: 50rem) {
+  .profilepic {
+    width: 100px;
+    height: 100px;
+  }
+}
 .followers {
   list-style: none;
   display: flex;
-  /* max-width: 80%; */
 }
 .details {
   display: flex;
