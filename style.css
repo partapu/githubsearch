@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 67.25%;
+}
+body {
+  /* background-image: linear-gradient(to bottom, #1a2a6c, #b21f1f, #fdbb2d); */
+  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #eee;
+  font-family: "Poppins", sans-serif;
+}
+header {
+  width: 100%;
+  text-align: center;
+}
+header input {
+  padding: 1rem;
+  background: linear-gradient(to bottom, #323232 0%, #3f3f3f 40%, #1c1c1c 150%),
+    linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0.4) 0%,
+      rgba(0, 0, 0, 0.25) 200%
+    );
+  background-blend-mode: multiply;
+  border: none;
+  border-radius: 2rem;
+  color: #eee;
+  outline: none;
+  display: inline-block;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  font-family: inherit;
+  width: 15%;
+  transition: all 0.2s;
+}
+header input:focus {
+  width: 20%;
+}
+header input:focus::-webkit-input-placeholder {
+  transform: translateX(120%);
+}
+
+header input::placeholder {
+  text-align: center;
+  font-size: 1.5rem;
+  transition: all 0.5s ease-in;
+}
+.card {
+  display: flex;
+  padding: 2rem;
+  margin-top: 3rem;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+  background-image: linear-gradient(to bottom, #c31432, #240b36);
+  border-radius: 0.5rem;
+}
+.profilepic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  padding: 0.5rem;
+  background-color: rgb(85, 64, 105);
+}
+.followers {
+  list-style: none;
+  display: flex;
+  /* max-width: 80%; */
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  margin-left: 1rem;
+  max-width: 50rem;
+}
+.details h3 {
+  margin-top: 1rem;
+}
+.followers li {
+  padding-top: 1rem;
+  padding-right: 1rem;
+}
+.followers li span {
+  margin-left: 0.5rem;
+}
+.error {
+  margin-top: 2rem;
+}
+.repos {
+  display: flex;
+  flex-wrap: wrap;
+}
+.repolink {
+  margin: 1rem 0.6rem 1rem;
+  padding: 0.5rem;
+  text-decoration: none;
+  color: white;
+  background: rgb(126, 58, 45);
+  border-radius: 1rem;
+  transition: all 0.4s;
+}
+.repolink:hover {
+  color: grey;
+  transform: translateY(-1px) scale(1.05);
+}
+.hidden {
+  display: none;
+}
